@@ -1,0 +1,116 @@
+@font-face {
+  font-family: 'MADE Tommy';
+  src: url('MADE\ Tommy\ Soft\ Black\ PERSONAL\ USE.otf') format('truetype');
+}
+body {
+    margin: 0;
+    font-family: 'MADE Tommy', sans-serif;
+    color: #a200ff;
+    background-color: hsl(0, 0%, 100%); 
+  }
+  .nav1{
+    width:100%;
+    height: 150px;
+    background-color: white;
+    display: flex;
+  }
+  .nav1 .header {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+  }
+  .nav2 {
+    display: flex;
+    overflow-x: auto; 
+    font-family: 'MADE Tommy', sans-serif;
+    white-space: nowrap;     /* evita salto de línea */
+    gap: 20px;
+    padding: 15px;
+    background-color: #a200ff;
+    scrollbar-width: none;   /* oculta scroll en Firefox */
+  }
+  
+  
+  .nav2::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .nav2 a {
+    flex-shrink: 0;           /* evita que se encojan */
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+  }
+  .titulo-bloomshell {
+    font-size: 36px;
+    font-weight: bold;
+    color: #a200ff;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .contenedor-productos {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los productos se ajusten en varias líneas si es necesario */
+    justify-content: center; /* Centra los productos en la pantalla */
+    gap: 20px; /* Espacio entre los productos */
+    padding: 20px; /* Espacio interno para que no queden pegados al borde */
+  }
+  .productos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 20px;
+    padding: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    background-size: contain;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  .producto {
+    background: #fff;
+    border: 1px solid #a200ff;
+    border-radius: 10px;
+    width: 150px;
+    text-align: center;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  .producto img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .producto h3 {
+    font-size: 16px;
+    margin: 10px 0 5px;
+  }
+  
+  .producto p {
+    font-weight: bold;
+    margin: 5px 0;
+  }
+  
+  .producto a {
+    display: inline-block;
+    padding: 10px 15px;
+    background: #a200ff;;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 20px;
+    margin-top: 10px;
+    transition: background 0.3s;
+    font-family: 'MADE Tommy', sans-serif; ;
+    font-weight: bold;
+  }
+  @media (max-width: 768px) {
+    .contenedor-productos {
+      justify-content: space-between;
+    }
+  
+    .producto {
+      width: calc(50% - 10px); /* Deja espacio para el gap */
+    }
+  }
