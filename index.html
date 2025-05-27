@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Euphoria Beauty</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">Euphoria Beauty</div>
+    <nav class="nav">
+      <a href="index.html">Inicio</a>
+      <a href="maqullaje.html">Maquillaje</a>
+      <a href="capilar.html">Cuidado capilar</a>
+   
+    </nav>
+    <div class="menu-toggle">☰</div>
+  </header>
+
+ <script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.nav');
+
+    menuToggle.addEventListener('click', () => {
+      nav.classList.toggle('show');
+    });
+  </script>
+  <!-- Hero con imagen -->
+  <div class="hero hero-con-color">
+    <div class="hero-content">
+      <div class="hero-texto">
+        <h1>Descubre la magia de ser tú misma</h1>
+        <p class="frase-elegante">Cada piel, cada mirada, cada historia merece brillar.</p>
+       
+        <a href="maqullaje.html" class="cta">Explora nuestros productos</a>
+      </div>
+      <div class="hero-image">
+        <img src="models.jpg" alt="Modelo feliz con maquillaje">
+      </div>
+    </div>
+  </div>
+
+ 
+
+</body>
+</html>
